@@ -61,7 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="top"
-                android:hint="呵呵呵呵呵呵呵呵"
+                android:hint="视频地址提示"
                 android:minHeight="66dp"
                 android:paddingLeft="15dp"
                 android:textColor="@android:color/white"

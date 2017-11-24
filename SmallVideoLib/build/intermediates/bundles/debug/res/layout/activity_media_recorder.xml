@@ -7,7 +7,7 @@
     <RelativeLayout
         android:id="@+id/title_layout"
         android:layout_width="match_parent"
-        android:layout_height="49dip"
+        android:layout_height="49dp"
         android:alpha="0.85"
         android:background="@color/transparent2"
         android:gravity="center_vertical">
@@ -65,6 +65,7 @@
         android:layout_height="5dp"
         android:layout_below="@+id/title_layout" />
 
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -77,36 +78,66 @@
     </FrameLayout>
 
     <!-- camera_bottom_bg -->
-    <RelativeLayout
-        android:id="@+id/bottom_layout"
+    <LinearLayout
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/record_progress"
-        android:layout_marginTop="300dip"
-        android:background="@color/color_381902"
-        >
-
-        <CheckedTextView
-            android:id="@+id/record_delete"
-            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <RelativeLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="18dip"
-            android:background="@drawable/record_delete_selector"
-            android:button="@null"
-            android:visibility="gone" />
+            >
+            <CheckedTextView
+                android:id="@+id/record_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dip"
+                android:background="@drawable/record_delete_selector"
+                android:button="@null"
+                android:visibility="gone" />
 
-        <TextView
-            android:id="@+id/record_controller"
-            android:layout_width="108dp"
-            android:layout_height="108dp"
-            android:layout_centerInParent="true"
-            android:background="@drawable/small_video_shoot"
-            android:gravity="center"
-            android:text="按住拍"
-            android:textColor="@color/camera_progress_three"
-            android:textSize="16sp" />
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/record_controller"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/small_video_shoot"
+                android:gravity="center"
+                android:text="按住拍"
+                android:textColor="@color/camera_progress_three"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/bottom_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/record_progress"-->
+        <!--&gt;-->
+        <!--<CheckedTextView-->
+            <!--android:id="@+id/record_delete"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="18dip"-->
+            <!--android:background="@drawable/record_delete_selector"-->
+            <!--android:button="@null"-->
+            <!--android:visibility="gone" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/record_controller"-->
+            <!--android:layout_width="108dp"-->
+            <!--android:layout_height="108dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:background="@drawable/small_video_shoot"-->
+            <!--android:gravity="center"-->
+            <!--android:text="按住拍"-->
+            <!--android:textColor="@color/camera_progress_three"-->
+            <!--android:textSize="16sp" />-->
+    <!--</RelativeLayout>-->
 
 
 </RelativeLayout>
