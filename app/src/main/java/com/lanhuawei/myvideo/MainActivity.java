@@ -460,6 +460,9 @@ public class MainActivity extends Activity {
                             compressMode = new VBRMode(Integer.valueOf(maxBitrate), Integer.valueOf(bitrate));
                         } else {
                             compressMode = new AutoVBRMode();
+
+
+
                         }
 
                         if (!spinner_only_compress.getSelectedItem().toString().equals("none")) {
