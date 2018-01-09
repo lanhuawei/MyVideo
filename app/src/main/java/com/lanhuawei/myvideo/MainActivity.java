@@ -508,7 +508,7 @@ public class MainActivity extends Activity {
                             }
                         }).start();
                     } else {
-                        Toast.makeText(this, "选择的不是视频或者地址错误,也可能是这种方式定制神机取不到！", Toast.LENGTH_SHORT);
+                        Toast.makeText(this, "选择的不是视频或者地址错误！！", Toast.LENGTH_SHORT);
                     }
                 }
             }

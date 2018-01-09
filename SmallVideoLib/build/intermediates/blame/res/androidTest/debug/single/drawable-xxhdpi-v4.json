@@ -8,12 +8,12 @@
         "source": "F:\\MyVideo\\SmallVideoLib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\record_camera_flash_led_on_normal.png"
     },
     {
-        "merged": "F:\\MyVideo\\SmallVideoLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\record_camera_flash_led_off_pressed.png",
-        "source": "F:\\MyVideo\\SmallVideoLib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\record_camera_flash_led_off_pressed.png"
-    },
-    {
         "merged": "F:\\MyVideo\\SmallVideoLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\record_delete_check_press.png",
         "source": "F:\\MyVideo\\SmallVideoLib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\record_delete_check_press.png"
+    },
+    {
+        "merged": "F:\\MyVideo\\SmallVideoLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\record_camera_flash_led_off_pressed.png",
+        "source": "F:\\MyVideo\\SmallVideoLib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\record_camera_flash_led_off_pressed.png"
     },
     {
         "merged": "F:\\MyVideo\\SmallVideoLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\record_cancel_press.png",
