@@ -420,6 +420,8 @@ public class MainActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == CHOOSE_CODE) {
             //
+//            String _data = "0000";
+
             if (resultCode == RESULT_OK && data != null && data.getData() != null) {
                 Uri uri = data.getData();
                 String[] proj = { MediaStore.Images.Media.DATA ,MediaStore.Images.Media.MIME_TYPE};
@@ -431,6 +433,8 @@ public class MainActivity extends Activity {
                     int mime_type_num = cursor.getColumnIndex(MediaStore.Images.Media.MIME_TYPE);
 
                     String _data = cursor.getString(_data_num);
+//                    Log.e("VideoPath", _data);
+                    System.out.print("videoPath" + _data_num);
                     String mime_type = cursor.getString(mime_type_num);
                     if (!TextUtils.isEmpty(mime_type) && mime_type.contains("video") && !TextUtils.isEmpty(_data)) {
                         BaseMediaBitrateConfig compressMode = null;
@@ -460,7 +464,6 @@ public class MainActivity extends Activity {
                             compressMode = new VBRMode(Integer.valueOf(maxBitrate), Integer.valueOf(bitrate));
                         } else {
                             compressMode = new AutoVBRMode();
-
 
 
                         }
@@ -510,12 +513,19 @@ public class MainActivity extends Activity {
                                 startActivity(intent);
                             }
                         }).start();
+
                     } else {
                         Toast.makeText(this, "选择的不是视频或者地址错误！！", Toast.LENGTH_SHORT);
                     }
                 }
+
+
+
             }
+//            Log.e("VideoPath", _data);
         }
+
+
         super.onActivityResult(requestCode, resultCode, data);
     }
 

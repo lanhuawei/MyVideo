@@ -27,4 +27,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.2.1'
     testCompile 'junit:junit:4.12'
     compile project(':SmallVideoLib')
+    compile 'net.zetetic:android-database-sqlcipher:3.5.1@aar'
 }
